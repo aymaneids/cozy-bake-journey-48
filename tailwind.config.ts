@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for Bang Bang Pie & Biscuits
+				bakery: {
+					brown: '#8B5A2B',  // Deep brown
+					cream: '#F5F0E1',  // Warm cream
+					beige: '#E8DCCA',  // Light beige
+					peach: '#FFDAB9',  // Soft peach
+					blue: '#ADD8E6',   // Light blue
+					text: '#4A3C2A',    // Dark brown text
 				}
+			},
+			fontFamily: {
+				'playfair': ['"Playfair Display"', 'serif'],
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,6 +103,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			backgroundImage: {
+				'wood-texture': "url('/wood-texture.jpg')",
+				'parchment': "url('/parchment.jpg')",
 			}
 		}
 	},
